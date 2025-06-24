@@ -22,7 +22,7 @@ app.use("/author", authorRouter);
 app.use("/category", categoryRouter);
 app.use("/book", BookRouter);
 //middleware handlers
-// app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
+
 app.use(NotFoundHandler);
 app.use(errorHandler);
 export default app;
